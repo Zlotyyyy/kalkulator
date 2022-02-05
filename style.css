@@ -1,0 +1,116 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    src: url(Digital7Mono-B1g5.ttf);
+    font-family: digital;
+}
+
+body,html {
+    width:100vw;
+    height:100vh;
+    background:#232334;
+    color:white;
+    overflow:hidden;
+}
+
+:root {
+    --dlugosc:300px;
+    --wysokosc:400px;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.kalkulator {
+    width:var(--dlugosc);
+    height:var(--wysokosc);
+    outline:5px solid black;
+    border-radius:10px;
+    background:linear-gradient(-45deg,silver 26%,white,silver 50%);
+    color:black;
+    box-shadow: 0 0 20px black inset,
+    0 0 10px black inset,
+    0px 0px 50px 10px black;
+    padding:10px;
+}
+
+.wynik {
+    width:95%;
+    height:20%;
+    outline: 2px solid black;
+    outline-offset:-2px;
+    position:relative;
+    margin:calc(var(--dlugosc) * 0.025);
+    display:flex;
+    align-items:center;
+    font-family:digital;
+    background:rgb(125,140,115);
+}
+
+#wynik {
+    overflow:hidden;
+    font-size:54px;
+    margin-left:2.5%;
+}
+
+#dzialanie {
+    position:absolute;
+    top:5px;
+    right:10px;
+    font-size:30px;
+}
+
+.klawiatura {
+    width:75%;
+    height:75%;
+    margin-left:calc(var(--dlugosc) * 0.03);
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.klawiatura .przycisk {
+    width: calc(var(--dlugosc) * 0.2);
+    text-align:center;
+    outline:2px solid black;
+    height: calc(var(--dlugosc) * 0.2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    border-radius:15px;
+    user-select: none;
+    cursor:pointer;
+}
+
+.kontrolki {
+    width:16.5%;
+    height:75%;
+    margin-left:2.5%;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.kontrolki .przycisk {
+    width:calc(var(--dlugosc) * 0.12);
+    height:calc(var(--dlugosc) * 0.12);
+    outline: 2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    user-select: none;
+    background:#a9bfb5;
+    cursor:pointer;
+}
