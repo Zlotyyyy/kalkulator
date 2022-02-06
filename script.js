@@ -7,7 +7,7 @@ var poleWynik = document.getElementById("wynik");
 
 
 function wpisz(cyfra) {
-    if(poleWynik.innerHTML == "NAN" || poleWynik.innerHTML == "Error") {
+    if(poleWynik.innerHTML == "NaN" || poleWynik.innerHTML == "Error") {
         poleWynik.innerHTML = "";
     };
     poleWynik.innerHTML = poleWynik.innerHTML + cyfra;
