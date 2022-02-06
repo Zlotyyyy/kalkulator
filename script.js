@@ -30,6 +30,8 @@ function rownanie() {
     if(liczba2 == 0 && rodzajDzialania == "/") {
         poleWynik.innerHTML = "Error";
     };
+    liczba1 = 0;
+    liczba2 = 0;
 };
 
 function wyczysc() {
